@@ -35,7 +35,7 @@ export default function Home() {
     if (
       parseInt(currentValue) <= 0 ||
       currentValue.length === 0 ||
-      parseInt(currentValue) > 100000000
+      parseInt(currentValue) > 10000000000
     ) {
       setValue(value)
     } else {
