@@ -121,3 +121,9 @@ body::-webkit-scrollbar-thumb {
     opacity: 0;
   }
 }
+
+.footer-bottom {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
