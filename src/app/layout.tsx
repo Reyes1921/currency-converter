@@ -18,9 +18,6 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Currency Converter",
   description: "Convert currencies quickly and easily",
-  icons: {
-    icon: "/favicon.ico",
-  },
   alternates: {
     canonical: "https://currency-converter-3000.netlify.app",
   },
@@ -33,6 +30,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link
+        rel="icon"
+        href="/white-favicon.ico"
+        media="(prefers-color-scheme: dark)"
+      />
+      <link
+        rel="icon"
+        href="/black-favicon.ico"
+        media="(prefers-color-scheme: light)"
+      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased footer-bottom grid grid-cols-1`}
       >
