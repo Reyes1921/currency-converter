@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased footer-bottom`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased footer-bottom grid grid-cols-1`}
       >
         <ThemeProvider
           attribute="class"
