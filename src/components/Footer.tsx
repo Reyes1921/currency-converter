@@ -4,13 +4,13 @@ import Link from "next/link"
 export const Footer = () => {
   const icons = [
     {
-      path: "github",
+      path: "https://github.com/Reyes1921/currency-converter",
       src: "/github.svg",
       title: "Github",
       alt: '"github logo',
     },
     {
-      path: "linkedin",
+      path: "https://www.linkedin.com/in/reyes-rondon/?locale=en_US",
       src: "/linkedin.svg",
       title: "Linkedin",
       alt: '"linkedin logo',
@@ -23,8 +23,8 @@ export const Footer = () => {
     },
   ]
   return (
-    <footer className="w-full md:max-w-[850px] mx-auto">
-      <div className="container flex justify-between items-center p-2">
+    <footer className="w-full mx-auto max-w-[1280px]">
+      <div className="flex justify-between pt-0 p-8 md:px-28">
         <div className="flex">
           {icons.map((icon) => (
             <Link

@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* *,
-*::after,
-*::before {
-  box-sizing: border-box;
-  outline: 2px solid lime;
-} */
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -21,7 +14,7 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 90%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -50,9 +43,9 @@ body {
   }
 
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 0 0% 18%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
+    --card: 0 0% 20%;
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
@@ -90,6 +83,8 @@ body {
 }
 
 body {
+  --sb-track-color: #232e33;
+  --sb-thumb-color: #dc2626;
   --sb-size: 14px;
 }
 

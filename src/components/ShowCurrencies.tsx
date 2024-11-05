@@ -121,7 +121,7 @@ export const ShowCurrencies = ({value, currencyProp}: ShowCurrenciesProps) => {
         {cards.map((item, index) => {
           return (
             <Card
-              className="w-[150px] md:w-[350px] relative md:aspect-[16/7] bg-[rgb(39 39 42/0)] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-gray-900 dark:via-gray-900 dark:to-black  from-gray-100 via-gray-100 to-white overlayImg"
+              className="w-[150px] md:w-[290px] lg:w-[400px] relative md:aspect-[16/7] overlayImg border-0"
               key={item.code}
             >
               <button
