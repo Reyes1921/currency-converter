@@ -139,7 +139,7 @@ export const ShowCurrencies = ({value, currencyProp}: ShowCurrenciesProps) => {
               </CardHeader>
               <CardContent className="text-center">
                 <div className="">
-                  <span className="text-sm md:text-lg lg:text-2xl font-bold break-all">
+                  <span className="text-xs md:text-lg lg:text-2xl font-bold break-all">
                     {value > 0
                       ? new Intl.NumberFormat("de-DE", {
                           style: "currency",
