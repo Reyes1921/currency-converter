@@ -48,11 +48,11 @@ export default function Home() {
   }
 
   return (
-    <>
+    <main className="w-full mx-auto max-w-[1280px]">
       <h1 className="hidden">Currency Converter</h1>
-      <div className="flex flex-col justify-center items-center m-8">
+      <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col w-full max-w-sm items-center space-x-2 justify-center">
-          <h3 className="font-bold mb-2">
+          <h3 className="font-bold mb-1">
             Select a currency and enter the amount
           </h3>
 
@@ -67,7 +67,7 @@ export default function Home() {
               onChange={onChangeValue}
             />
             <Select onValueChange={onChangeCurrency} defaultValue={"USD"}>
-              <SelectTrigger className="md:min-w-[280px] md:max-w-[280px]">
+              <SelectTrigger className="min-w-[200px] md:min-w-[280px] md:max-w-[280px]">
                 <SelectValue placeholder="Select a currency" />
               </SelectTrigger>
               <SelectContent>
@@ -94,10 +94,10 @@ export default function Home() {
             </Select>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center m-10 min-h-[300px]">
+        <div className="my-8 min-h-[300px]">
           <DynamicComponent value={value} currencyProp={currency} />
         </div>
       </div>
-    </>
+    </main>
   )
 }

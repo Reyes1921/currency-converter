@@ -41,7 +41,7 @@ export default function RootLayout({
         media="(prefers-color-scheme: light)"
       />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased footer-bottom grid grid-cols-1  dark:bg-[#1B1B1B]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased footer-bottom grid grid-cols-1 dark:bg-[#1B1B1B]`}
       >
         <ThemeProvider
           attribute="class"

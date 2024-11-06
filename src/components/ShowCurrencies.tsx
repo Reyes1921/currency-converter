@@ -108,11 +108,11 @@ export const ShowCurrencies = ({value, currencyProp}: ShowCurrenciesProps) => {
         </Button>
       </div>
       <span className="mb-2 text-primary">Maximum 6 countries at a time</span>
-      <div className="flex items-center justify-center flex-wrap gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 px-5">
         {cards.map((item, index) => {
           return (
             <Card
-              className="w-[150px] md:w-[290px] lg:w-[400px] relative md:aspect-[16/7] overlayImg border-0"
+              className="backdrop-blur-sm bg-[#67676718] relative md:aspect-[16/7] border-0"
               key={item.code}
             >
               <button
@@ -138,8 +138,8 @@ export const ShowCurrencies = ({value, currencyProp}: ShowCurrenciesProps) => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <div className="text-base md:text-2xl font-bold">
-                  <span className="break-all">
+                <div className="">
+                  <span className="text-sm md:text-lg lg:text-2xl font-bold break-all">
                     {value > 0
                       ? new Intl.NumberFormat("de-DE", {
                           style: "currency",
