@@ -51,7 +51,7 @@ export default function Home() {
     <main className="w-full mx-auto max-w-[1280px]">
       <h1 className="hidden">Currency Converter</h1>
       <div className="flex flex-col justify-center items-center">
-        <div className="flex flex-col w-full max-w-sm items-center space-x-2 justify-center">
+        <div className="flex flex-col w-full max-w-sm justify-center items-center space-x-2">
           <h3 className="font-bold mb-1">
             Select a currency and enter the amount
           </h3>
