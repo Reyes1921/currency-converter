@@ -89,17 +89,8 @@ export const ShowCurrencies = ({value, currencyProp}: ShowCurrenciesProps) => {
                         width={100}
                         height={100}
                         alt="flag image"
-                        src={
-                          item.code === "EUR"
-                            ? `/eu.svg`
-                            : `https://flagsapi.com/${item.code.substring(
-                                0,
-                                2
-                              )}/shiny/64.png`
-                        }
-                        className={`${
-                          item.code === "EUR" ? "py-3 px-1" : ""
-                        } mr-2 w-[24px]`}
+                        src={`/flags/${item.code.substring(0, 2)}.svg`}
+                        className={`mr-2 w-[24px]`}
                       />
                       {item.name}
                     </span>
@@ -137,17 +128,8 @@ export const ShowCurrencies = ({value, currencyProp}: ShowCurrenciesProps) => {
                       width={100}
                       height={100}
                       alt="flag image"
-                      src={
-                        item.code === "EUR"
-                          ? `/eu.svg`
-                          : `https://flagsapi.com/${item.code.substring(
-                              0,
-                              2
-                            )}/shiny/64.png`
-                      }
-                      className={`${
-                        item.code === "EUR" ? "py-3 px-1" : ""
-                      } w-[32px] md:w-[48px] aspect-square`}
+                      src={`/flags/${item.code.substring(0, 2)}.svg`}
+                      className={` w-[32px] md:w-[48px] aspect-square pr-1`}
                     />
                     <span className="ml-1 text-xs md:text-base">
                       {item.country}

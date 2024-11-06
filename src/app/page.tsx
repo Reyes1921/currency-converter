@@ -81,17 +81,8 @@ export default function Home() {
                             width={100}
                             height={100}
                             alt="flag image"
-                            src={
-                              item.code === "EUR"
-                                ? `/eu.svg`
-                                : `https://flagsapi.com/${item.code.substring(
-                                    0,
-                                    2
-                                  )}/shiny/64.png`
-                            }
-                            className={`${
-                              item.code === "EUR" ? "py-3 px-1" : ""
-                            } mr-2 w-[24px]`}
+                            src={`/flags/${item.code.substring(0, 2)}.svg`}
+                            className={`mr-2 w-[24px]`}
                           />
                           {item.name}
                         </span>
