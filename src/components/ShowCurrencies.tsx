@@ -90,7 +90,7 @@ export const ShowCurrencies = ({value, currencyProp}: ShowCurrenciesProps) => {
                         height={100}
                         alt="flag image"
                         src={`/flags/${item.code.substring(0, 2)}.svg`}
-                        className={`mr-2 w-[24px]`}
+                        className={`mr-2 w-[24px] aspect-[14/18]`}
                       />
                       {item.name}
                     </span>
