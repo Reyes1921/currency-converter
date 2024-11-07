@@ -24,7 +24,7 @@ export const Footer = () => {
   ]
   return (
     <footer className="w-full mx-auto max-w-[1280px]">
-      <div className="flex justify-between px-5 pt-0 py-4">
+      <div className="flex justify-between px-5 pt-0 py-2">
         <div className="flex">
           {icons.map((icon) => (
             <Link

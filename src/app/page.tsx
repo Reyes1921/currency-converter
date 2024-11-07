@@ -50,24 +50,24 @@ export default function Home() {
   return (
     <main className="w-full mx-auto max-w-[1280px]">
       <h1 className="hidden">Currency Converter</h1>
-      <div className="flex flex-col justify-center items-center">
-        <div className="flex flex-col w-full max-w-sm justify-center items-center space-x-2">
-          <h3 className="font-bold mb-1">
+      <div className="flex flex-col justify-center items-center px-5">
+        <div className="flex flex-col w-full justify-center items-center">
+          <h3 className="font-bold py-4 md:py-1">
             Select a currency and enter the amount
           </h3>
 
-          <div className="flex">
+          <div className="flex flex-col md:flex-row justify-center items-center w-full gap-4">
             <Input
               type="number"
               placeholder="Enter amount"
               min="0"
               max="100000000"
-              className="mr-4 md:min-w-[200px] md:max-w-[200px]"
+              className="max-w-[250px] md:min-w-[200px] md:max-w-[200px]"
               autoFocus
               onChange={onChangeValue}
             />
             <Select onValueChange={onChangeCurrency} defaultValue={"USD"}>
-              <SelectTrigger className="min-w-[200px] md:min-w-[280px] md:max-w-[280px]">
+              <SelectTrigger className="max-w-[250px] md:min-w-[280px] md:max-w-[280px]">
                 <SelectValue placeholder="Select a currency" />
               </SelectTrigger>
               <SelectContent>
