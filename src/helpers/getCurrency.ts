@@ -4,7 +4,7 @@ export const getCurrency = async (): Promise<{
   const api = process.env.API_KEY
   try {
     const response = await fetch(
-      `https://v6.exchangerate-api.com/v6/${api}/latest/USD`
+      `https://backend-currency-converter.vercel.app/api/currencies/${api}`
     )
 
     if (!response.ok) {
