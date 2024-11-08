@@ -36,24 +36,7 @@ export const getValueStorageData = (key: string): initialDataCached => {
 
     if (data) {
       const parsedData = JSON.parse(data) as initialDataCached
-
-      // Check if the data is expired (e.g., 12 AM)
-      const currentTime = new Date().getTime()
-      if (parsedData.time_next_update_unix * 1000 < currentTime) {
-        // Data is expired, fetch new data
-        getCurrency()
-          .then((data) => {
-            localStorage.setItem(key, JSON.stringify(data))
-            return data
-          })
-          .catch((error) => {
-            console.error("Error fetching currency data:", error)
-            return responseDefault
-          })
-      } else {
-        // Data is not expired, return cached data
-        return parsedData
-      }
+      return parsedData
     } else {
       getCurrency()
         .then((data) => {
