@@ -76,7 +76,7 @@ export default function Home() {
                   {currencies.map((item: currencyTypes) => {
                     return (
                       <SelectItem value={item.code} key={item.code}>
-                        <span className="flex justify-center items-center">
+                        <span className="flex justify-center items-center animated fadeIn">
                           <Image
                             width={100}
                             height={100}

@@ -71,7 +71,7 @@ export const ShowCurrencies = ({value, currencyProp}: ShowCurrenciesProps) => {
     }
   }
   return (
-    <div className="flex flex-col justify-center items-center min-h-[300px] px-5">
+    <div className="flex flex-col justify-center items-center min-h-[300px] px-5 animated fadeIn">
       <h2 className="font-bold mb-2">Select the countries</h2>
       <div className="flex justify-center gap-2 mb-4">
         <Select onValueChange={onChangeCurrency}>
